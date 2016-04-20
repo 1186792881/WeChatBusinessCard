@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<title>的名片</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 100%;
+				width: 100%;
+				background: url(img/start.jpeg); 
+			}
+			
+			img{
+				height: 20vw;
+				width: 20vw;
+				display: block;
+				margin:10px auto;
+				border-radius:50% ;
+			}
+			.container{
+				text-align: center;
+				color:#FFFFFF
+			}
+			#content{
+				position: relative;
+				top: 15vh;
+				left: 10vw;
+				right: 10vw;
+				font: "微软雅黑";
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.contents{
+				height: 70vw;
+				width: 70vw;
+				/*-webkit-animation: contents 3.5s linear forwards;*/
+			}
+			/*@-webkit-keyframes contents{
+				0%{-webkit-transform: rotate(0deg);}
+				100%{-webkit-transform: rotate(360deg);}
+			} */
+			a{
+				color: #fff;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #fff;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header">
+				<img src="img/head.jpg" class="img-responsive"/>
+				<h2>李荣</h2>
+				<div>互联网公司</div>
+				<div>项目经理</div>
+			</div>
+			<div id="content" class="contents">
+				<a data-toggle="tooltip" title="123" data-placement = "top" style=" position: relative;left: 25vw;">
+					<span class="fonts">QQ</span>
+				</a>
+				<a data-toggle="tooltip" title="0755-124352" data-placement = "top" style=" position: relative;right: 25vw;">
+					<span class="fonts" style="">传真</span>
+				</a>
+				<a href="tel:13068951965"><img src="img/call.jpg" class="img-responsive"></a>
+				<a data-toggle="tooltip" title="0755-124352" data-placement = "top" style=" position: relative;right: 10vw;bottom: 10vh;">
+					<span class="fonts" style="">地址</span>
+				</a>
+				<a data-toggle="tooltip" title="12324@qq.com" data-placement = "top" style=" position: relative;left: 30vw;bottom: 10vh;">
+					<span class="fonts" style="">邮箱</span>
+				</a>
+				<a data-toggle="tooltip" title="0755-124352" data-placement = "top" style=" position: relative;right: 25vw;">
+					<span class="fonts" style="">网址</span>
+				</a>
+				<a data-toggle="tooltip" title="0755-124352" data-placement = "top" style=" position: relative;left: 5vw;">
+					<span class="fonts" style="">微信</span>
+				</a>
+				
+			</div>
+		</div>
+		<script>
+			$(function () 
+	      { $("[data-toggle='tooltip']").tooltip();
+	      });
+		</script>
+	</body>
+</html>
